@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madeira Tours - Roteiros Turísticos</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li><a href="experiencias.html" class="nav-link">Coisas para Fazer</a></li>
+                    <li><a href="inspiracao.html" class="nav-link">Inspiração de Viagem</a></li>
+                    <li><a href="carrinho.html" class="nav-link">Carrinho</a></li>
+                    <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+                    <li><a href="roteiro.html" class="nav-link">Meu Roteiro</a></li>
+                    <li><a href="login.html" class="nav-link nav-link--account">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Descubra a Magia da Madeira</h1>
+                <p class="hero-subtitle">Reserve excursões, passeios e atividades com profissionais locais</p>
+                <form class="search-form" action="#" method="get">
+                    <label for="search" class="visually-hidden">Pesquisar lugares ou atividades</label>
+                    <input type="search" id="search" name="search" placeholder="Pesquisar lugares ou atividades..." aria-label="Pesquisar">
+                    <button type="submit" class="btn btn-primary">Pesquisar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="suggestions">
+            <h2>Sugestões de Atividades</h2>
+            <div class="activity-grid">
+                <article class="activity-card">
+                    <img src="assets/levada-25-fontes.jpg" alt="Levada das 25 Fontes" loading="lazy">
+                    <div class="activity-card-content">
+                        <h3>Levada das 25 Fontes</h3>
+                        <p class="activity-location">Costa Norte</p>
+                        <p class="activity-description">Caminhada pela famosa levada com cascatas naturais</p>
+                        <div class="activity-rating">
+                            <span aria-label="Classificação: 4.8 de 5 estrelas">★★★★★</span>
+                            <span class="rating-value">4.8</span>
+                        </div>
+                        <div class="activity-actions">
+                            <a href="detalhe.html?id=1" class="btn btn-secondary">Ver Detalhes</a>
+                            <a href="favoritos.html" class="btn-icon" aria-label="Adicionar aos favoritos">❤️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="activity-card">
+                    <img src="assets/piscina-natural-porto-moniz.jpg" alt="Piscinas Naturais do Porto Moniz" loading="lazy">
+                    <div class="activity-card-content">
+                        <h3>Piscinas Naturais do Porto Moniz</h3>
+                        <p class="activity-location">Costa Norte</p>
+                        <p class="activity-description">Relaxe nas piscinas naturais formadas pela lava vulcânica</p>
+                        <div class="activity-rating">
+                            <span aria-label="Classificação: 4.9 de 5 estrelas">★★★★★</span>
+                            <span class="rating-value">4.9</span>
+                        </div>
+                        <div class="activity-actions">
+                            <a href="detalhe.html?id=2" class="btn btn-secondary">Ver Detalhes</a>
+                            <a href="favoritos.html" class="btn-icon" aria-label="Adicionar aos favoritos">❤️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="activity-card">
+                    <img src="assets/Funchal_Teleferico.jpg" alt="Teleférico do Funchal" loading="lazy">
+                    <div class="activity-card-content">
+                        <h3>Teleférico do Funchal</h3>
+                        <p class="activity-location">Capital</p>
+                        <p class="activity-description">Vista panorâmica da capital madeirense</p>
+                        <div class="activity-rating">
+                            <span aria-label="Classificação: 4.7 de 5 estrelas">★★★★★</span>
+                            <span class="rating-value">4.7</span>
+                        </div>
+                        <div class="activity-actions">
+                            <a href="detalhe.html?id=3" class="btn btn-secondary">Ver Detalhes</a>
+                            <a href="favoritos.html" class="btn-icon" aria-label="Adicionar aos favoritos">❤️</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="suggestions">
+            <h2>Sugestões de Lugares</h2>
+            <div class="activity-grid">
+                <article class="activity-card">
+                    <img src="assets/ponta_sao_lourenco.jpg" alt="Ponta de São Lourenço" loading="lazy">
+                    <div class="activity-card-content">
+                        <h3>Ponta de São Lourenço</h3>
+                        <p class="activity-location">Costa Este</p>
+                        <p class="activity-description">Paisagem vulcânica única com vistas deslumbrantes</p>
+                        <div class="activity-rating">
+                            <span aria-label="Classificação: 4.9 de 5 estrelas">★★★★★</span>
+                            <span class="rating-value">4.9</span>
+                        </div>
+                        <div class="activity-actions">
+                            <a href="detalhe.html?id=4" class="btn btn-secondary">Ver Detalhes</a>
+                            <a href="favoritos.html" class="btn-icon" aria-label="Adicionar aos favoritos">❤️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="activity-card">
+                    <img src="assets/floresta-laurissilva.jpg" alt="Floresta Laurissilva" loading="lazy">
+                    <div class="activity-card-content">
+                        <h3>Floresta Laurissilva</h3>
+                        <p class="activity-location">Interior</p>
+                        <p class="activity-description">Floresta primitiva património mundial da UNESCO</p>
+                        <div class="activity-rating">
+                            <span aria-label="Classificação: 4.8 de 5 estrelas">★★★★★</span>
+                            <span class="rating-value">4.8</span>
+                        </div>
+                        <div class="activity-actions">
+                            <a href="detalhe.html?id=5" class="btn btn-secondary">Ver Detalhes</a>
+                            <a href="favoritos.html" class="btn-icon" aria-label="Adicionar aos favoritos">❤️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="activity-card">
+                    <img src="assets/praia_porto_santo.jpg" alt="Praia de Porto Santo" loading="lazy">
+                    <div class="activity-card-content">
+                        <h3>Praia de Porto Santo</h3>
+                        <p class="activity-location">Porto Santo</p>
+                        <p class="activity-description">Praia de areia dourada com 9km de extensão</p>
+                        <div class="activity-rating">
+                            <span aria-label="Classificação: 5.0 de 5 estrelas">★★★★★</span>
+                            <span class="rating-value">5.0</span>
+                        </div>
+                        <div class="activity-actions">
+                            <a href="detalhe.html?id=6" class="btn btn-secondary">Ver Detalhes</a>
+                            <a href="favoritos.html" class="btn-icon" aria-label="Adicionar aos favoritos">❤️</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="itinerary-generator">
+            <h2>Gerar Roteiro Personalizado</h2>
+            <div class="generator-card">
+                <p>Crie o seu roteiro personalizado baseado nas suas preferências</p>
+                <a href="gerar-roteiro.html" class="btn btn-primary">Criar Roteiro</a>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>Destaques</h2>
+            <div class="highlights-grid">
+                <article class="highlight-card">
+                    <img src="assets/observacao_golfinhos_e_baleias.jpg" alt="Experiências" loading="lazy">
+                    <h3>Experiências Únicas</h3>
+                    <p>Descubra atividades exclusivas com profissionais locais</p>
+                </article>
+                <article class="highlight-card">
+                    <img src="assets/floresta-laurissilva.jpg" alt="Atrações" loading="lazy">
+                    <h3>Atrações Imperdíveis</h3>
+                    <p>Explore os melhores lugares da Madeira</p>
+                </article>
+                <article class="highlight-card">
+                    <img src="assets/mercado_dos_lavradores.jpg" alt="Reservas" loading="lazy">
+                    <h3>Reservas Fáceis</h3>
+                    <p>Reserve tudo num só lugar</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="lugares.html">Lugares para Ver</a></li>
+                        <li><a href="experiencias.html">Coisas para Fazer</a></li>
+                        <li><a href="inspiracao.html">Inspiração de Viagem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Conta</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Registar</a></li>
+                        <li><a href="conta.html">Minha Conta</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="conta.html#ajuda">Ajuda</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Madeira Tours. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

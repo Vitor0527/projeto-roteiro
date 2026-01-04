@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Roteiro - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li><a href="experiencias.html" class="nav-link">Coisas para Fazer</a></li>
+                    <li><a href="inspiracao.html" class="nav-link">Inspiração de Viagem</a></li>
+                    <li><a href="carrinho.html" class="nav-link">Carrinho</a></li>
+                    <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+                    <li><a href="roteiro.html" class="nav-link">Meu Roteiro</a></li>
+                    <li><a href="login.html" class="nav-link nav-link--account">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="auth-page">
+            <h1>Gerar Roteiro Personalizado</h1>
+            <p>Crie o seu roteiro personalizado baseado nas suas preferências</p>
+
+            <form class="auth-form" action="carrinho.html" method="get">
+                <div class="form-group">
+                    <label for="date-start">Data de Início</label>
+                    <input type="date" id="date-start" name="start-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date-end">Data de Fim</label>
+                    <input type="date" id="date-end" name="end-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="participants">Número de Participantes</label>
+                    <input type="number" id="participants" name="participants" required min="1" max="20" value="2">
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Interesses</label>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
+                        <label><input type="checkbox" name="interests" value="natureza"> Natureza</label>
+                        <label><input type="checkbox" name="interests" value="cultura"> Cultura</label>
+                        <label><input type="checkbox" name="interests" value="gastronomia"> Gastronomia</label>
+                        <label><input type="checkbox" name="interests" value="aventura"> Aventura</label>
+                        <label><input type="checkbox" name="interests" value="praia"> Praia</label>
+                        <label><input type="checkbox" name="interests" value="caminhadas"> Caminhadas</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Orçamento Aproximado (€)</label>
+                    <input type="number" id="budget" name="budget" min="0" step="50" placeholder="Ex: 500">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Gerar Roteiro</button>
+                    <a href="index.html" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="lugares.html">Lugares para Ver</a></li>
+                        <li><a href="experiencias.html">Coisas para Fazer</a></li>
+                        <li><a href="inspiracao.html">Inspiração de Viagem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Conta</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Registar</a></li>
+                        <li><a href="conta.html">Minha Conta</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="conta.html#ajuda">Ajuda</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Madeira Tours. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

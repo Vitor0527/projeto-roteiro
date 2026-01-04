@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li><a href="experiencias.html" class="nav-link">Coisas para Fazer</a></li>
+                    <li><a href="inspiracao.html" class="nav-link">Inspiração de Viagem</a></li>
+                    <li><a href="carrinho.html" class="nav-link">Carrinho</a></li>
+                    <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+                    <li><a href="roteiro.html" class="nav-link">Meu Roteiro</a></li>
+                    <li><a href="login.html" class="nav-link nav-link--account">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="itinerary-page">
+            <h1>Notificações</h1>
+
+            <div class="itinerary-tabs">
+                <a href="#updates" class="itinerary-tab active">Updates</a>
+                <a href="#atividades" class="itinerary-tab">Atividades</a>
+                <a href="#pagamentos" class="itinerary-tab">Pagamentos</a>
+            </div>
+
+            <section id="updates" class="itinerary-content">
+                <h2>Change Log desta Aplicação</h2>
+                <div class="notifications-list">
+                    <article class="notification-item unread">
+                        <div class="notification-title">Nova Versão 2.0</div>
+                        <p>Lançamos uma nova versão com melhorias na interface e novas funcionalidades.</p>
+                        <time class="notification-date">15 de Janeiro, 2024</time>
+                    </article>
+
+                    <article class="notification-item">
+                        <div class="notification-title">Melhorias na Pesquisa</div>
+                        <p>Otimizámos o sistema de pesquisa para resultados mais rápidos e precisos.</p>
+                        <time class="notification-date">5 de Janeiro, 2024</time>
+                    </article>
+
+                    <article class="notification-item">
+                        <div class="notification-title">Novo Design</div>
+                        <p>Apresentamos um novo design mais moderno e responsivo.</p>
+                        <time class="notification-date">20 de Dezembro, 2023</time>
+                    </article>
+                </div>
+            </section>
+
+            <section id="atividades" class="itinerary-content">
+                <h2>Alerta de Datas das Atividades Compradas</h2>
+                <div class="notifications-list">
+                    <article class="notification-item unread">
+                        <div class="notification-title">Lembrete: Levada das 25 Fontes</div>
+                        <p>Sua atividade "Levada das 25 Fontes" está agendada para amanhã, 15 de Fevereiro às 09:00.</p>
+                        <time class="notification-date">14 de Fevereiro, 2024</time>
+                        <div style="margin-top: 1rem;">
+                            <a href="roteiro.html" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="notification-item">
+                        <div class="notification-title">Confirmação: Piscinas Naturais</div>
+                        <p>Sua reserva para "Piscinas Naturais do Porto Moniz" foi confirmada para 16 de Fevereiro às 14:00.</p>
+                        <time class="notification-date">12 de Fevereiro, 2024</time>
+                        <div style="margin-top: 1rem;">
+                            <a href="roteiro.html" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="notification-item">
+                        <div class="notification-title">Atividade Realizada: Teleférico</div>
+                        <p>A sua atividade "Teleférico do Funchal" foi realizada com sucesso em 10 de Janeiro.</p>
+                        <time class="notification-date">10 de Janeiro, 2024</time>
+                        <div style="margin-top: 1rem;">
+                            <a href="roteiro.html#arquivo" class="btn btn-primary">Ver no Arquivo</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="pagamentos" class="itinerary-content">
+                <h2>Recibos de Pagamento</h2>
+                <div class="notifications-list">
+                    <article class="notification-item unread">
+                        <div class="notification-title">Recibo de Pagamento #12345</div>
+                        <p>O seu pagamento de €103 foi processado com sucesso para as atividades do seu roteiro.</p>
+                        <time class="notification-date">12 de Fevereiro, 2024</time>
+                        <div style="margin-top: 1rem;">
+                            <a href="#" class="btn btn-secondary">Descarregar Recibo (PDF)</a>
+                        </div>
+                    </article>
+
+                    <article class="notification-item">
+                        <div class="notification-title">Recibo de Pagamento #12340</div>
+                        <p>O seu pagamento de €50 foi processado com sucesso para a atividade "Teleférico do Funchal".</p>
+                        <time class="notification-date">8 de Janeiro, 2024</time>
+                        <div style="margin-top: 1rem;">
+                            <a href="#" class="btn btn-secondary">Descarregar Recibo (PDF)</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="lugares.html">Lugares para Ver</a></li>
+                        <li><a href="experiencias.html">Coisas para Fazer</a></li>
+                        <li><a href="inspiracao.html">Inspiração de Viagem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Conta</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Registar</a></li>
+                        <li><a href="conta.html">Minha Conta</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="conta.html#ajuda">Ajuda</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Madeira Tours. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

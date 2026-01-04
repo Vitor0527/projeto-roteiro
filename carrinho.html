@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li><a href="experiencias.html" class="nav-link">Coisas para Fazer</a></li>
+                    <li><a href="inspiracao.html" class="nav-link">Inspiração de Viagem</a></li>
+                    <li><a href="carrinho.html" class="nav-link active">Carrinho</a></li>
+                    <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+                    <li><a href="roteiro.html" class="nav-link">Meu Roteiro</a></li>
+                    <li><a href="login.html" class="nav-link nav-link--account">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="cart-page">
+            <h1>Carrinho de Compras</h1>
+            <p>Lista de artigos selecionados</p>
+
+            <div class="cart-items">
+                <article class="cart-item">
+                    <img src="assets/levada-25-fontes.jpg" alt="Levada das 25 Fontes" class="cart-item-image" loading="lazy">
+                    <div class="cart-item-details">
+                        <h3>Levada das 25 Fontes</h3>
+                        <div class="cart-item-meta">
+                            <p><strong>Data:</strong> 15 de Fevereiro, 2024</p>
+                            <p><strong>Hora:</strong> 09:00</p>
+                            <p><strong>Idioma:</strong> Português</p>
+                            <p><strong>Participantes:</strong> 2 adultos</p>
+                            <p><strong>Classificação:</strong> ★★★★★ 4.8</p>
+                        </div>
+                        <p class="cart-item-description">Caminhada pela levada mais famosa da Madeira com guia profissional. Inclui transfer e lanche.</p>
+                        <a href="detalhe.html?id=1" class="btn btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="cart-item-price">
+                        <div class="price">€70</div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="btn btn-secondary" aria-label="Remover do carrinho">Remover</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart-item">
+                    <img src="assets/piscina-natural-porto-moniz.jpg" alt="Piscinas Naturais do Porto Moniz" class="cart-item-image" loading="lazy">
+                    <div class="cart-item-details">
+                        <h3>Piscinas Naturais do Porto Moniz</h3>
+                        <div class="cart-item-meta">
+                            <p><strong>Data:</strong> 16 de Fevereiro, 2024</p>
+                            <p><strong>Hora:</strong> 14:00</p>
+                            <p><strong>Idioma:</strong> Inglês</p>
+                            <p><strong>Participantes:</strong> 2 adultos</p>
+                            <p><strong>Classificação:</strong> ★★★★★ 4.9</p>
+                        </div>
+                        <p class="cart-item-description">Relaxe nas piscinas naturais formadas pela lava vulcânica há milhares de anos.</p>
+                        <a href="detalhe.html?id=2" class="btn btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="cart-item-price">
+                        <div class="price">€28</div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="btn btn-secondary" aria-label="Remover do carrinho">Remover</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Resumo do Roteiro</h2>
+                <div class="cart-summary-row">
+                    <span>Subtotal (2 atividades)</span>
+                    <span>€98</span>
+                </div>
+                <div class="cart-summary-row">
+                    <span>Taxa de serviço</span>
+                    <span>€5</span>
+                </div>
+                <div class="cart-summary-row total">
+                    <span>Total</span>
+                    <span>€103</span>
+                </div>
+
+                <div class="itinerary-calculator">
+                    <h3>Calcular Roteiro</h3>
+                    <p>O nosso sistema irá calcular automaticamente o melhor itinerário baseado nas atividades selecionadas.</p>
+                    <button class="btn btn-primary">Calcular Melhor Roteiro</button>
+                </div>
+
+                <div class="checkout-section">
+                    <h2>Finalizar Roteiro - Dados de Pagamento</h2>
+                    <form class="checkout-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="card-name">Nome no Cartão</label>
+                            <input 
+                                type="text" 
+                                id="card-name" 
+                                name="card-name" 
+                                required 
+                                placeholder="Nome completo"
+                                autocomplete="cc-name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="card-number">Número do Cartão</label>
+                            <input 
+                                type="text" 
+                                id="card-number" 
+                                name="card-number" 
+                                required 
+                                placeholder="1234 5678 9012 3456"
+                                pattern="[0-9\s]{13,19}"
+                                autocomplete="cc-number"
+                                aria-describedby="card-error card-success"
+                            >
+                            <span class="error-message" id="card-error">Número de cartão inválido</span>
+                            <span class="success-message" id="card-success">Número válido</span>
+                        </div>
+
+                        <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <label for="card-expiry">Validade</label>
+                                <input 
+                                    type="text" 
+                                    id="card-expiry" 
+                                    name="card-expiry" 
+                                    required 
+                                    placeholder="MM/AA"
+                                    pattern="[0-9]{2}/[0-9]{2}"
+                                    autocomplete="cc-exp"
+                                >
+                            </div>
+                            <div>
+                                <label for="card-cvv">CVV</label>
+                                <input 
+                                    type="text" 
+                                    id="card-cvv" 
+                                    name="card-cvv" 
+                                    required 
+                                    placeholder="123"
+                                    pattern="[0-9]{3,4}"
+                                    autocomplete="cc-csc"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="billing-address">Morada de Faturação</label>
+                            <textarea 
+                                id="billing-address" 
+                                name="billing-address" 
+                                required 
+                                rows="3"
+                                placeholder="Rua, Número, Código Postal, Cidade"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Finalizar Reserva</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="lugares.html">Lugares para Ver</a></li>
+                        <li><a href="experiencias.html">Coisas para Fazer</a></li>
+                        <li><a href="inspiracao.html">Inspiração de Viagem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Conta</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Registar</a></li>
+                        <li><a href="conta.html">Minha Conta</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="conta.html#ajuda">Ajuda</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Madeira Tours. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

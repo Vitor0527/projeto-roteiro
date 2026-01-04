@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Roteiro - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li><a href="experiencias.html" class="nav-link">Coisas para Fazer</a></li>
+                    <li><a href="inspiracao.html" class="nav-link">Inspiração de Viagem</a></li>
+                    <li><a href="carrinho.html" class="nav-link">Carrinho</a></li>
+                    <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+                    <li><a href="roteiro.html" class="nav-link active">Meu Roteiro</a></li>
+                    <li><a href="login.html" class="nav-link nav-link--account">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="itinerary-page">
+            <h1>Meu Roteiro</h1>
+
+            <div class="itinerary-tabs">
+                <a href="#ativas" class="itinerary-tab active">Atividades a Realizar</a>
+                <a href="#arquivo" class="itinerary-tab">Arquivo de Atividades</a>
+            </div>
+
+            <section id="ativas" class="itinerary-content">
+                <h2>Atividades a Realizar</h2>
+                <div class="activity-grid">
+                    <article class="activity-card">
+                        <img src="assets/levada-25-fontes.jpg" alt="Levada das 25 Fontes" loading="lazy">
+                        <div class="activity-card-content">
+                            <h3>Levada das 25 Fontes</h3>
+                            <p class="activity-location">Costa Norte</p>
+                            <p class="activity-meta"><strong>Data:</strong> 15 de Fevereiro, 2024 às 09:00</p>
+                            <p class="activity-description">Caminhada pela levada mais famosa da Madeira com guia profissional. Inclui transfer e lanche.</p>
+                            <div class="activity-rating">
+                                <span aria-label="Classificação: 4.8 de 5 estrelas">★★★★★</span>
+                                <span class="rating-value">4.8</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="detalhe.html?id=1" class="btn btn-secondary">Ver Detalhes</a>
+                                <button class="btn btn-primary">Classificar e Comentar</button>
+                            </div>
+                            <details>
+                                <summary>Informações e Outras Sugestões</summary>
+                                <p><strong>Incluído no serviço:</strong> Guia, transfer, lanche</p>
+                                <p><strong>Sugestões:</strong> Leve calçado adequado e protetor solar</p>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="activity-card">
+                        <img src="assets/piscina-natural-porto-moniz.jpg" alt="Piscinas Naturais" loading="lazy">
+                        <div class="activity-card-content">
+                            <h3>Piscinas Naturais do Porto Moniz</h3>
+                            <p class="activity-location">Costa Norte</p>
+                            <p class="activity-meta"><strong>Data:</strong> 16 de Fevereiro, 2024 às 14:00</p>
+                            <p class="activity-description">Relaxe nas piscinas naturais formadas pela lava vulcânica há milhares de anos.</p>
+                            <div class="activity-rating">
+                                <span aria-label="Classificação: 4.9 de 5 estrelas">★★★★★</span>
+                                <span class="rating-value">4.9</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="detalhe.html?id=2" class="btn btn-secondary">Ver Detalhes</a>
+                                <button class="btn btn-primary">Classificar e Comentar</button>
+                            </div>
+                            <details>
+                                <summary>Informações e Outras Sugestões</summary>
+                                <p><strong>Incluído no serviço:</strong> Acesso às piscinas, guarda-chuva</p>
+                                <p><strong>Sugestões:</strong> Leve toalha e protetor solar</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="arquivo" class="itinerary-content">
+                <h2>Arquivo de Atividades</h2>
+                <p>Histórico de atividades já realizadas</p>
+                <div class="activity-grid">
+                    <article class="activity-card">
+                        <img src="assets/Funchal_Teleferico.jpg" alt="Teleférico" loading="lazy">
+                        <div class="activity-card-content">
+                            <h3>Teleférico do Funchal</h3>
+                            <p class="activity-location">Capital</p>
+                            <p class="activity-meta"><strong>Realizada em:</strong> 10 de Janeiro, 2024</p>
+                            <p class="activity-description">Vista panorâmica da capital madeirense.</p>
+                            <div class="activity-rating">
+                                <span aria-label="Minha classificação: 5 estrelas">★★★★★</span>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="detalhe.html?id=3" class="btn btn-secondary">Ver Detalhes</a>
+                                <button class="btn btn-primary">Ver Classificação e Comentário</button>
+                            </div>
+                            <details>
+                                <summary>Classificação e Comentário</summary>
+                                <p><strong>Minha Classificação:</strong> ★★★★★</p>
+                                <p><strong>Meu Comentário:</strong> "Experiência incrível! As vistas são deslumbrantes. Altamente recomendado!"</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="lugares.html">Lugares para Ver</a></li>
+                        <li><a href="experiencias.html">Coisas para Fazer</a></li>
+                        <li><a href="inspiracao.html">Inspiração de Viagem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Conta</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Registar</a></li>
+                        <li><a href="conta.html">Minha Conta</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="conta.html#ajuda">Ajuda</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Madeira Tours. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

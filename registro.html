@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li><a href="experiencias.html" class="nav-link">Coisas para Fazer</a></li>
+                    <li><a href="inspiracao.html" class="nav-link">Inspiração de Viagem</a></li>
+                    <li><a href="carrinho.html" class="nav-link">Carrinho</a></li>
+                    <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+                    <li><a href="roteiro.html" class="nav-link">Meu Roteiro</a></li>
+                    <li><a href="login.html" class="nav-link nav-link--account">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="auth-page">
+            <h1>Criar Conta</h1>
+            <form class="auth-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="reg-name">Nome Completo</label>
+                    <input 
+                        type="text" 
+                        id="reg-name" 
+                        name="name" 
+                        required 
+                        minlength="3"
+                        placeholder="Seu nome completo"
+                        autocomplete="name"
+                        aria-describedby="name-error name-success"
+                    >
+                    <span class="error-message" id="name-error">O nome deve ter pelo menos 3 caracteres</span>
+                    <span class="success-message" id="name-success">Nome válido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input 
+                        type="email" 
+                        id="reg-email" 
+                        name="email" 
+                        required 
+                        placeholder="seu@email.com"
+                        autocomplete="email"
+                        aria-describedby="reg-email-error reg-email-success"
+                    >
+                    <span class="error-message" id="reg-email-error">Por favor, introduza um email válido</span>
+                    <span class="success-message" id="reg-email-success">Email válido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password">Palavra-passe</label>
+                    <input 
+                        type="password" 
+                        id="reg-password" 
+                        name="password" 
+                        required 
+                        minlength="8"
+                        placeholder="Mínimo 8 caracteres"
+                        autocomplete="new-password"
+                        aria-describedby="reg-password-error reg-password-success"
+                    >
+                    <span class="error-message" id="reg-password-error">A palavra-passe deve ter pelo menos 8 caracteres</span>
+                    <span class="success-message" id="reg-password-success">Palavra-passe válida</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password-confirm">Confirmar Palavra-passe</label>
+                    <input 
+                        type="password" 
+                        id="reg-password-confirm" 
+                        name="password-confirm" 
+                        required 
+                        minlength="8"
+                        placeholder="Confirme a palavra-passe"
+                        autocomplete="new-password"
+                        aria-describedby="password-confirm-error password-confirm-success"
+                    >
+                    <span class="error-message" id="password-confirm-error">As palavras-passe não coincidem</span>
+                    <span class="success-message" id="password-confirm-success">Palavras-passe coincidem</span>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="terms" required aria-describedby="terms-error">
+                        Aceito os <a href="#" target="_blank">termos e condições</a> e a <a href="#" target="_blank">política de privacidade</a>
+                    </label>
+                    <span class="error-message" id="terms-error">Deve aceitar os termos e condições</span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Criar Conta</button>
+                </div>
+            </form>
+
+            <div class="form-footer">
+                <p>Já tem conta? <a href="login.html">Iniciar sessão aqui</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-icon">🏝️</span>
+                <span class="logo-text">Madeira Tours</span>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="lugares.html">Lugares para Ver</a></li>
+                        <li><a href="experiencias.html">Coisas para Fazer</a></li>
+                        <li><a href="inspiracao.html">Inspiração de Viagem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Conta</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registro.html">Registar</a></li>
+                        <li><a href="conta.html">Minha Conta</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="conta.html#ajuda">Ajuda</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Madeira Tours. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
